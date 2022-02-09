@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <!-- navigation bar start -->
+  <div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">AKSHAY KOTHEKAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item text-white">
+              <a class=" menulink text-white active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="menulink text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="menulink text-white" href="#">Services</a>
+              <!-- <a class="menulink dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a> -->
+              <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul> -->
+            </li>
+            <li class="nav-item">
+              <a href="#Portfolio" class="menulink text-white">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact" class="menulink text-white">Contact </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 form-control-sm" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- navigation bar end -->
+
+  <!-- slider-start -->
+
+  <div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active slider-img">
+          <img src="images/project1.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption text-start slider-caption">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+
+          </div>
+        </div>
+        <div class="carousel-item slider-img">
+          <img src="images/project2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption slider-caption ">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item slider-img">
+          <img src="images/project3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption text-end slider-caption">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- slider-end -->
+
+  <!-- ----------------facts------------- -->
+
+  <section class="facts">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <div class="fact-body">
+            <div class="fact-img text-center p-3"><img src="images/design.png" alt=""></div>
+            <div class="fact-text text-center px-3  py-3">
+              <h3>Static Website Development</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui dolore quo impedit aspernatur Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Similique, aut dolore! Eligendi, voluptatum dicta!
+                Voluptatum voluptas iste explicabo sequi odit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="fact-body">
+            <div class="fact-img text-center p-3"><img src="images/design.png" alt=""></div>
+            <div class="fact-text text-center px-3 py-3">
+              <h3>Static Website Development</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui dolore quo impedit aspernatur Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Possimus illo placeat deleniti pariatur eum. Sequi
+                animi quisquam iusto magnam obcaecati. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-3">
+          <div class="fact-body">
+            <div class="fact-img text-center p-3"><img src="images/design.png" alt=""></div>
+            <div class="fact-text text-center px-3  py-3">
+              <h3>Static Website Development</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui dolore quo impedit aspernatur sint.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quis animi! Minima expedita
+                voluptatibus, vel cumque dolorum molestias porro </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- ----------about section start-------- -->
+  <div class="container">
+    <section id="about">
+      <div class="section-title text-center">
+        <h4>----- About ----</h4>
+        <h2>Know More About Me</h2>
+      </div>
+      <div class="row">
+        <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni hic aliquid aut eaque expedita
+          inventore exercitationem numquam voluptate cum distinctio. Aliquam impedit culpa maxime. Dolores! Lorem ipsum
+          dolor sit amet. </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 py-4">
+          <div class="profile-img"><img src="images/snow3.jpg" width="100%" alt=""></div>
+
+        </div>
+        <div class="col-md-8 p-3">
+          <div class="profile-content">
+            <div class="col-md-12">
+              <h2 class="fs-3 fw-bold"> Web Developer & UI UX Designer</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, minus. Numquam deleniti velit
+                voluptates doloremque?</p>
+            </div>
+            <div class="row details">
+              <div class="col-md-6">
+                <ul class="p-0">
+                  <li class="my-2"><i class="bi bi-chevron-right me-2 text-primary "></i><strong>Name</strong>Akshay
+                    kothekar</li>
+                  <li class="my-2"><i class="bi bi-chevron-right me-2 text-primary fs-5"></i><strong>Name</strong>Akshay
+                    kothekar</li>
+                  <li class="my-2"><i class="bi bi-chevron-right me-2 text-primary "></i><strong>Name</strong>Akshay
+                    kothekar</li>
+                  <li class="my-2"><i class="bi bi-chevron-right me-2 text-primary "></i><strong>Name</strong>Akshay
+                    kothekar</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="p-0">
+                  <li class="my-2"><i class="bi bi-chevron-right me-2 text-primary "></i><strong>Name</strong>Akshay
+                    kothekar</li>
+                  <li class="my-2"><i class="bi bi-chevron-right me-2 text-primary "></i><strong>Name</strong>Akshay
+                    kothekar</li>
+                  <li class="my-2"><i class="bi bi-chevron-right me-2 text-primary "></i><strong>Name</strong>Akshay
+                    kothekar</li>
+                  <li class="my-2"><i class="bi bi-chevron-right me-2 text-primary "></i><strong>Name</strong>Akshay
+                    kothekar</li>
+                </ul>
+
+
+              </div>
+            </div>
+            <div class="col-md-12 my-3 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora
+              cumque in amet est itaque commodi recusandae tempore pariatur, officia et nulla adipisci vitae obcaecati,
+              voluptates inventore. Labore, eaque. Numquam.</div>
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Resume
+            </button>
+          </div>
+        </div>
+    </section>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">My Resume</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="images/Akshay Kothekar.pdf#toolbar=0" width="100% " height="700px" frameborder="0"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Contact me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ------------------ modal end--------------- -->
+
+
+
+    <!-- ----------skill started---------- -->
+    <div class="section">
+      <div class="container">
+        <div class="section-title text-center">
+          <h4>---- Skills ----</h4>
+          <h2>My skills</h2>
+        </div>
+        <div class="row">
+          <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni hic aliquid aut eaque expedita
+            inventore exercitationem numquam voluptate cum distinctio. Aliquam impedit culpa maxime. Dolores! Lorem
+            ipsum dolor sit amet. </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill">
+              <!-- skill column.1 start -->
+              <div class="row py-2">
+                <div class="col-6 fw-bold my-2 px-3">HTML</div>
+                <div class="col-6 text-end fw-bold my-2 px-3">90%</div>
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row py-2">
+                <div class="col-6 fw-bold my-2 px-3">CSS</div>
+                <div class="col-6 text-end fw-bold my-2 px-3">85%</div>
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-6 fw-bold my-2 px-3">Bootstrap</div>
+                <div class="col-6 text-end fw-bold my-2 px-3">70%</div>
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-2">
+                <div class="col-6 fw-bold my-2 px-3">PHP</div>
+                <div class="col-6 text-end fw-bold my-2 px-3">60%</div>
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- skill coumn.1 end -->
+
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- skill column-2 -->
+            <div class="row py-2">
+              <div class="col-6 fw-bold my-2 px-3">JAVA</div>
+              <div class="col-6 text-end fw-bold my-2 px-3">92%</div>
+              <div class="col-md-12">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-6 fw-bold my-2 px-3">PYTHON</div>
+              <div class="col-6 text-end fw-bold my-2 px-3">90%</div>
+              <div class="col-md-12">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-6 fw-bold my-2 px-3">MYSQL</div>
+              <div class="col-6 text-end fw-bold my-2 px-3">70%</div>
+              <div class="col-md-12">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-2">
+              <div class="col-6 fw-bold my-2 px-3">C</div>
+              <div class="col-6 text-end fw-bold my-2 px-3">60%</div>
+              <div class="col-md-12">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <!-- skill column-2 -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ---------------skill end----------------- -->
+
+
+
+    <!-- portfolio start -->
+
+    <section id="Portfolio">
+      <div class="container">
+        <div class="section-title text-center">
+          <h4>----- About ----</h4>
+          <h2>Know More About Me</h2>
+        </div>
+        <div class="row">
+          <p class="my-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni hic aliquid aut eaque expedita
+            inventore exercitationem numquam voluptate cum distinctio. Aliquam impedit culpa maxime. Dolores! Lorem
+            ipsum
+            dolor sit amet. </p>
+        </div>
+        <div class="row">
+          <div class="col-md-3 p-3">
+            <div class="portfolio-img"><img src="images/web1.png" width="100%" alt=""></div>
+          </div>
+          <div class="col-md-3 p-3">
+            <div class="portfolio-img"><img src="images/receipe.png" width="100%" alt=""></div>
+          </div>
+          <div class="col-md-3 p-3">
+            <div class="portfolio-img"><img src="images/project1.jpg" width="100%" alt=""></div>
+          </div>
+          <div class="col-md-3 p-3">
+            <div class="portfolio-img"><img src="images/project1.jpg" width="100%" alt=""></div>
+          </div>
+          <div class="col-md-3 p-3">
+            <div class="portfolio-img"><img src="images/project1.jpg" width="100%" alt=""></div>
+          </div>
+          <div class="col-md-3 p-3">
+            <div class="portfolio-img"><img src="images/project1.jpg" width="100%" alt=""></div>
+          </div>
+          <div class="col-md-3 p-3">
+            <div class="portfolio-img"><img src="images/project1.jpg" width="100%" alt=""></div>
+          </div>
+          <div class="col-md-3 p-3">
+            <div class="portfolio-img"><img src="images/project1.jpg" width="100%" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- portfolio end -->
+
+    <!-- contact section start -->
+    <section id="contact">
+      <div class="section-title text-center">
+        <h4>----- About ----</h4>
+        <h2>Know More About Me</h2>
+        <div class="container hifi">
+          <div class="col-md-12">
+              <div class="row">
+  
+                  <div class="col-md-6 ">
+                      <div class=" bo">
+                          <div class="col-md-12">
+                              <div class="boxxx p-2 text-center ">
+                                  <i class="bi bi-geo-alt"></i>
+                                  <p id="heading">Address</p>
+                                  <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                              </div>
+                          </div>
+  
+                          <div class="col-md-12">
+                              <div class="row my-2">
+                                  <div class="col-md-6">
+                                      <div class="boxxx p-2 text-center"><i class="bi bi-envelope"></i>
+                                          <p id="heading">Mail-us</p>
+                                          <p id="para">Lorem ipsum dolor sit amet.</p>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="boxxx  p-2 text-center">
+                                          <i class="bi bi-telephone"></i>
+                                          <p id="heading">Call-us</p>
+                                          <p id="para">1234567890</p>
+                                      </div>
+                                  </div>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 ">
+                      <div class="boxxx">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="box"><input type="text" class="form-control" id="exampleInputname"
+                                          aria-describedby="" placeholder="Your name"></div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="box"><input type="email" class="form-control" id="exampleInputEmail1"
+                                          aria-describedby="emailHelp" placeholder="Your mail"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="box"><input type="text" class="form-control" id="" placeholder="Subject"></div>
+                          </div>
+                          <div class="col-md-12 my-4"> 
+                              <div class="box"><input type="text" class="form-control" id="meassage" placeholder="Message"></div></div>
+                              <div class=" pb-2 text-center my-1"><button type="button" class="  btn btn-primary">Send message</button></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+
+
+    <footer id="footer" class="bg-dark">
+      <div class="container-fluid">
+        <div class="content text-center  text-light pt-5 px-5">
+          <h2>AKSHAY KOTHEKAR</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ipsam dolor, natus necessitatibus
+            provident suscipit neque molestiae at illo consectetur!</p>
+          <div class="social-icons">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+
+          </div>
+
+
+        </div>
+        <div class="credit mt-3 p-3 text-center text-white">
+          <p>akshay kothekar &copy; 2022 <br>
+          Design by akshay</p>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+</body>
+
+</html>
